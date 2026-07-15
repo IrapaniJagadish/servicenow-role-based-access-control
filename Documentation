@@ -1,1 +1,168 @@
+# Project Documentation
 
+# Optimizing User, Group, and Role Management with Access Control and Workflows
+ 1. Project Overview
+
+This project implements a secure Role-Based Access Control (RBAC) system in ServiceNow to manage users, groups, roles, and project tasks efficiently. The objective is to ensure that users can access only the records and functionalities permitted by their assigned roles.
+
+The system is designed for a small project team consisting of a Project Manager and Team Members. Using Access Control Lists (ACLs), custom roles, groups, and Flow Designer, the project automates task assignment while maintaining security and accountability.
+
+2. Problem Statement
+
+Many organizations face challenges in managing project tasks securely. Without proper access control, unauthorized users may modify or delete important records, leading to security risks and reduced accountability.
+
+This project addresses these issues by implementing Role-Based Access Control (RBAC) and automated workflows in ServiceNow.
+
+
+3. Objectives
+
+The main objectives of this project are:
+
+- Create and manage users within ServiceNow.
+- Create custom roles for Project Manager and Team Member.
+- Assign users to appropriate groups.
+- Restrict unauthorized access using ACLs.
+- Create a Project Task table for managing project activities.
+- Automate task assignment using Flow Designer.
+- Allow Team Members to update only task status and work notes.
+- Improve project tracking and accountability.
+
+ 4. Technologies Used
+
+- ServiceNow Platform
+- User Administration
+- Users, Groups & Roles Management
+- Access Control Lists (ACL)
+- Flow Designer
+- Task Management
+- Data Management
+- Update Sets
+
+5. System Modules
+
+## User Management
+
+- Create Project Manager user (Alice)
+- Create Team Member user (Bob)
+- Manage user profiles
+
+## Group Management
+
+- Create Project Team group
+- Assign users to the group
+
+## Role Management
+
+- Project Manager Role
+- Team Member Role
+
+## Project Task Management
+
+- Create Project Task table
+- Store task details
+- Track project progress
+
+## Access Control
+
+- Restrict record creation
+- Restrict record modification
+- Restrict record deletion
+- Limit record visibility
+
+## Workflow Automation
+
+- Automatic task assignment
+- Status tracking
+- Completion notifications
+
+6. User Roles
+
+## Project Manager
+
+Responsibilities:
+
+- Create project tasks
+- Edit project tasks
+- Delete project tasks
+- Assign tasks
+- Monitor task progress
+- View all records
+
+## Team Member
+
+Responsibilities:
+
+- View assigned tasks only
+- Update task status
+- Add work notes
+- Complete assigned tasks
+
+Restrictions:
+
+- Cannot create tasks
+- Cannot delete tasks
+- Cannot modify restricted fields
+
+7. Access Control Implementation
+
+Access Control Lists (ACLs) are configured to ensure secure access to project records.
+
+### Project Manager Permissions
+
+- Create Records
+- Read All Records
+- Update All Records
+- Delete Records
+
+### Team Member Permissions
+
+- Read Assigned Records
+- Update Status
+- Update Work Notes
+
+8. Workflow Process
+
+The workflow follows these steps:
+
+1. Project Manager creates a project task.
+2. Task is assigned to a Team Member.
+3. Flow Designer sends a notification.
+4. Team Member updates task status.
+5. Project Manager monitors progress.
+6. Completion notification is generated automatically.
+
+9. Testing
+
+The project was tested using different user accounts.
+
+### Project Manager Testing
+
+- Successfully created tasks.
+- Assigned tasks.
+- Updated records.
+- Deleted records.
+
+### Team Member Testing
+
+- Viewed assigned tasks only.
+- Updated task status.
+- Added work notes.
+- Could not modify restricted fields.
+
+10. Expected Outcome
+
+The implementation provides a secure project management system where responsibilities are clearly defined. Role-Based Access Control ensures that users can perform only authorized operations, improving security, accountability, and workflow efficiency.
+
+11. Future Enhancements
+
+- Email Notifications
+- Dashboard Reports
+- SLA Management
+- Approval Workflows
+- Mobile Support
+- Project Analytics
+- Integration with Microsoft Teams
+
+Conclusion
+
+This project successfully demonstrates the implementation of Role-Based Access Control (RBAC) in ServiceNow using users, groups, roles, Access Control Lists (ACLs), and Flow Designer. The system enhances security, improves project management, and ensures that every user has access only to the resources required for their responsibilities.

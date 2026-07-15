@@ -1,1 +1,53 @@
+Update Set
+Overview
 
+An Update Set is a ServiceNow feature used to capture and migrate configuration changes from one ServiceNow instance to another. It allows developers to package customizations such as tables, roles, ACLs, workflows, and application configurations.
+
+This project uses an Update Set to store all the configurations required for the implementation of the Role-Based Access Control (RBAC) system.
+
+Components Included
+
+The Update Set contains the following configurations:
+
+- User Configuration
+- Group Configuration
+- Custom Roles
+- Role Assignments
+- Project Task Table
+- Custom Fields
+- Access Control Lists (ACLs)
+- Flow Designer Workflow
+- Notification Configuration
+- Application Customizations
+
+ Purpose
+
+The Update Set helps in:
+
+- Migrating project configurations between ServiceNow instances.
+- Maintaining version control of customizations.
+- Simplifying deployment.
+- Reducing manual configuration errors.
+
+Export Process
+
+1. Navigate to **System Update Sets → Local Update Sets**.
+2. Open the project Update Set.
+3. Click **Export to XML**.
+4. Save the exported `.xml` file.
+5. Upload the exported file to this repository.
+
+Expected File
+
+After exporting, this folder will contain a file similar to:
+
+Project_RBAC_Update_Set.xml
+Benefits
+
+- Easy deployment
+- Configuration backup
+- Reusable project package
+- Faster migration between environments
+ Note
+
+The XML Update Set file will be uploaded after completing the project implementation and exporting it from the ServiceNow instance.

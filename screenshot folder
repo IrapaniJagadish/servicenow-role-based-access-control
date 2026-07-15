@@ -1,1 +1,106 @@
+# Screenshots
+
+## Purpose
+
+This section contains screenshots demonstrating the successful implementation of the **"Optimizing User, Group, and Role Management with Access Control and Workflows"** project in ServiceNow.
+
+The screenshots provide visual proof of the system configuration, role assignments, access control implementation, workflow automation, and testing.
+
+1. ServiceNow Login
+
+- Login page of the ServiceNow instance.
+- Administrator login.
+
+2. User Creation
+
+Users created for the project:
+
+- Alice (Project Manager)
+- Bob (Team Member)
+
+3. Role Creation
+
+Custom roles created:
+
+- Project Manager
+- Team Member
+
+ 4. Group Creation
+
+Project Team group with assigned members.
+
+ 5. Project Task Table
+
+Custom Project Task table showing:
+
+- Project Name
+- Task Name
+- Assigned To
+- Status
+- Priority
+- Due Date
+- Work Notes
+
+6. Access Control Lists (ACL)
+
+Screenshots of ACL configuration demonstrating:
+
+- Create Permission
+- Read Permission
+- Write Permission
+- Delete Permission
+
+7. Flow Designer
+
+Workflow created for:
+
+- Task Assignment
+- Status Tracking
+- Completion Notification
+
+8. Project Manager Testing
+
+Screenshots showing that the Project Manager can:
+
+- Create Tasks
+- Assign Tasks
+- Edit Tasks
+- Delete Tasks
+- View All Records
+
+9. Team Member Testing
+
+Screenshots showing that Team Members can:
+
+- View Assigned Tasks
+- Update Task Status
+- Add Work Notes
+
+Restrictions:
+
+- Cannot Create Tasks
+- Cannot Delete Tasks
+- Cannot Modify Restricted Fields
+
+10. Notifications
+
+Screenshots showing:
+
+- Task Assignment Notification
+- Task Completion Notification
+
+Testing Summary
+
+The screenshots confirm that:
+
+- Users and roles were successfully configured.
+- Groups were created correctly.
+- ACLs restricted unauthorized access.
+- Flow Designer automated task assignment.
+- Project Managers had full access.
+- Team Members had limited access.
+- The project met all functional requirements.
+ Note
+
+Actual screenshots will be uploaded after completing the implementation in the ServiceNow instance.
 

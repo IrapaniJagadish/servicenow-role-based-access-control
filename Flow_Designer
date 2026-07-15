@@ -1,1 +1,96 @@
+# Flow Designer
 
+Overview
+
+This project uses **ServiceNow Flow Designer** to automate project task assignment and task status tracking. The workflow reduces manual effort by automatically notifying users when tasks are assigned and when task status changes.
+
+ Flow Name
+
+**Project Task Assignment Flow**
+
+Trigger
+
+**When:** A new record is created in the **Project Task** table.
+
+Flow Process
+
+Step 1: Trigger
+
+- A Project Manager creates a new Project Task.
+
+↓
+
+Step 2: Check Assignment
+
+- Verify that the **Assigned To** field is not empty.
+
+↓
+
+Step 3: Send Notification
+
+- Send a notification to the assigned Team Member.
+- Include:
+  - Project Name
+  - Task Name
+  - Priority
+  - Due Date
+
+↓
+
+Step 4: Monitor Status
+
+- Wait for the Team Member to update the task status.
+
+↓
+
+Step 5: Completion Check
+
+- If the Status changes to **Completed**:
+  - Notify the Project Manager.
+  - Update the task record.
+
+Flow Diagram
+
+```text
+Project Manager
+       │
+       ▼
+Create Project Task
+       │
+       ▼
+Assign Team Member
+       │
+       ▼
+Flow Designer Triggered
+       │
+       ▼
+Send Assignment Notification
+       │
+       ▼
+Team Member Updates Status
+       │
+       ▼
+Status = Completed?
+       │
+   Yes ▼
+Notify Project Manager
+
+ Actions Used
+
+- Record Created Trigger
+- If Condition
+- Send Notification
+- Wait for Record Update
+- Update Record
+
+ Benefits
+
+- Automatic task assignment
+- Faster communication
+- Reduced manual work
+- Real-time project tracking
+- Improved accountability
+
+Expected Outcome
+
+The workflow automatically manages task assignment and status updates while keeping both the Project Manager and Team Members informed throughout the project lifecycle.
